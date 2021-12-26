@@ -8,7 +8,7 @@ import Routes from './routes/Route.js';
 dotenv.config();
 const app = express();
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const username = process.env.MONGO_USERNAME;
 const password = process.env.MONGO_PASSWORD;
